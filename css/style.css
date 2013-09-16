@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  -webkit-transform: translateZ(0);
+     -moz-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+       -o-transform: translateZ(0);
+          transform: translateZ(0);
+}
+html,
+body {
+  background: #000;
+  padding: 0;
+}
+
+.tile {
+  display: block;
+  position: absolute;
+  height: 32px;
+  width: 32px;
+}
+.floor {
+  -webkit-transform: rotate(-45deg) skew(15deg, 15deg);
+     -moz-transform: rotate(-45deg) skew(15deg, 15deg);
+      -ms-transform: rotate(-45deg) skew(15deg, 15deg);
+       -o-transform: rotate(-45deg) skew(15deg, 15deg);
+          transform: rotate(-45deg) skew(15deg, 15deg);
+}
+
+.right-wall {
+  -webkit-transform: rotate(15deg) skew(15deg, 15deg) translate(16px, -32px);
+     -moz-transform: rotate(15deg) skew(15deg, 15deg) translate(16px, -32px);
+      -ms-transform: rotate(15deg) skew(15deg, 15deg) translate(16px, -32px);
+       -o-transform: rotate(15deg) skew(15deg, 15deg) translate(16px, -32px);
+          transform: rotate(15deg) skew(15deg, 15deg) translate(16px, -32px);
+}
+
+.left-wall {
+  -webkit-transform: rotate(-15deg) skew(-15deg, -15deg) translate(-16px, -32px);
+     -moz-transform: rotate(-15deg) skew(-15deg, -15deg) translate(-16px, -32px);
+      -ms-transform: rotate(-15deg) skew(-15deg, -15deg) translate(-16px, -32px);
+       -o-transform: rotate(-15deg) skew(-15deg, -15deg) translate(-16px, -32px);
+          transform: rotate(-15deg) skew(-15deg, -15deg) translate(-16px, -32px);
+}
+
+.t1 {
+  background: red;
+  left: 300px;
+  top: 200px;
+}
+
+.t2 {
+  background: blue;
+  left: 300px;
+  top: 200px;
+}
+
+.t3 {
+  background: green;
+  left: 300px;
+  top: 200px;
+}
