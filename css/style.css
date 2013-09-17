@@ -5,6 +5,7 @@
       -ms-transform: translateZ(0);
        -o-transform: translateZ(0);
           transform: translateZ(0);
+  border: 0;
 }
 html,
 body {
@@ -23,6 +24,7 @@ body {
   position: absolute;
   height: 32px;
   width: 32px;
+  text-decoration: underline;
 
   -webkit-transform-origin: 0 0;
 }
@@ -50,4 +52,18 @@ y  -webkit-transform: rotateX(-45deg) rotateY(-45deg);
       -ms-transform: rotate(0deg) skew(0deg, -22.5deg) translate(-32px, -32px);
        -o-transform: rotate(0deg) skew(0deg, -22.5deg) translate(-32px, -32px);
           transform: rotate(0deg) skew(0deg, -22.5deg) translate(-32px, -32px);
+}
+
+.person {
+  position: absolute;
+  display: block;
+  background: red;
+  width: 24px;
+  height: 32px;
+
+  -webkit-transform: translate(-12px, -16px);
+     -moz-transform: translate(-12px, -16px);
+      -ms-transform: translate(-12px, -16px);
+       -o-transform: translate(-12px, -16px);
+          transform: translate(-12px, -16px);
 }
