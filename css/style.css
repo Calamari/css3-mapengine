@@ -18,40 +18,72 @@ body {
 
 /* TODO: remove width, height and translate definitions from here */
 
-.tile {
+#canvas div {
   display: block;
   overflow: hidden;
   position: absolute;
+}
+#canvas div.container {
+  overflow: visible;
+}
+
+#canvas div.container div {
+  -webkit-transform-origin: 50% 100%;
+}
+
+.tile {
   height: 32px;
   width: 32px;
   text-decoration: underline;
 
   -webkit-transform-origin: 0 0;
 }
+
+.top-side {
+  -webkit-transform: rotate(45deg) skew(-15deg, -15deg);
+     -moz-transform: rotate(45deg) skew(-15deg, -15deg);
+      -ms-transform: rotate(45deg) skew(-15deg, -15deg);
+       -o-transform: rotate(45deg) skew(-15deg, -15deg);
+          transform: rotate(45deg) skew(-15deg, -15deg);
+}
 .floor {
-  -webkit-transform: rotate(45deg) skew(-22.5deg, -22.5deg);
-     -moz-transform: rotate(45deg) skew(-22.5deg, -22.5deg);
-      -ms-transform: rotate(45deg) skew(-22.5deg, -22.5deg);
-       -o-transform: rotate(45deg) skew(-22.5deg, -22.5deg);
-          transform: rotate(45deg) skew(-22.5deg, -22.5deg);
+  -webkit-transform: rotate(45deg) skew(-15deg, -15deg);
+     -moz-transform: rotate(45deg) skew(-15deg, -15deg);
+      -ms-transform: rotate(45deg) skew(-15deg, -15deg);
+       -o-transform: rotate(45deg) skew(-15deg, -15deg);
+          transform: rotate(45deg) skew(-15deg, -15deg);
 
 y  -webkit-transform: rotateX(-45deg) rotateY(-45deg);
 }
 
 .right-wall {
-  -webkit-transform: rotate(0deg) skew(0deg, 22.5deg) translate(0, -32px);
-     -moz-transform: rotate(0deg) skew(0deg, 22.5deg) translate(0, -32px);
-      -ms-transform: rotate(0deg) skew(0deg, 22.5deg) translate(0, -32px);
-       -o-transform: rotate(0deg) skew(0deg, 22.5deg) translate(0, -32px);
-          transform: rotate(0deg) skew(0deg, 22.5deg) translate(0, -32px);
+  -webkit-transform: rotate(0deg) skew(0deg, 15deg) translate(0, -32px);
+     -moz-transform: rotate(0deg) skew(0deg, 15deg) translate(0, -32px);
+      -ms-transform: rotate(0deg) skew(0deg, 15deg) translate(0, -32px);
+       -o-transform: rotate(0deg) skew(0deg, 15deg) translate(0, -32px);
+          transform: rotate(0deg) skew(0deg, 15deg) translate(0, -32px);
+}
+.left-side {
+  -webkit-transform: rotate(0deg) skew(0deg, 15deg);
+     -moz-transform: rotate(0deg) skew(0deg, 15deg);
+      -ms-transform: rotate(0deg) skew(0deg, 15deg);
+       -o-transform: rotate(0deg) skew(0deg, 15deg);
+          transform: rotate(0deg) skew(0deg, 15deg);
 }
 
 .left-wall {
-  -webkit-transform: rotate(0deg) skew(0deg, -22.5deg) translate(-32px, -32px);
-     -moz-transform: rotate(0deg) skew(0deg, -22.5deg) translate(-32px, -32px);
-      -ms-transform: rotate(0deg) skew(0deg, -22.5deg) translate(-32px, -32px);
-       -o-transform: rotate(0deg) skew(0deg, -22.5deg) translate(-32px, -32px);
-          transform: rotate(0deg) skew(0deg, -22.5deg) translate(-32px, -32px);
+  -webkit-transform: rotate(0deg) skew(0deg, -15deg) translate(-32px, -32px);
+     -moz-transform: rotate(0deg) skew(0deg, -15deg) translate(-32px, -32px);
+      -ms-transform: rotate(0deg) skew(0deg, -15deg) translate(-32px, -32px);
+       -o-transform: rotate(0deg) skew(0deg, -15deg) translate(-32px, -32px);
+          transform: rotate(0deg) skew(0deg, -15deg) translate(-32px, -32px);
+}
+.right-side {
+  -webkit-transform: rotate(0deg) skew(0deg, -15deg);
+     -moz-transform: rotate(0deg) skew(0deg, -15deg);
+      -ms-transform: rotate(0deg) skew(0deg, -15deg);
+       -o-transform: rotate(0deg) skew(0deg, -15deg);
+          transform: rotate(0deg) skew(0deg, -15deg);
 }
 
 .person {
